@@ -1,1 +1,1 @@
-Brushing up frontend skills and build cleaner ui's
+Brushing up frontend skills to build cleaner ui's
