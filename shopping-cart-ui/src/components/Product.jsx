@@ -3,24 +3,23 @@ import React, { useEffect, useState } from 'react'
 import {cartData} from '../data/cartData'
 import PricePanel from './PricePanel'
 
-const totalPrice = cartData.reduce((total, itemPrice) => total + itemPrice.price, 0);
+// const totalPrice = cartData.reduce((total, itemPrice) => total + itemPrice.price, 0);
 
 const product = () => {
 
     const [cartItems, setCartItems] = useState(cartData);
 
     const removeItem = (id) => {
-        cartItems.find(item => item.id === id);
-        console.log(id);
-        
-        
+        setCartItems(cartItems.filter(item => item.id != id));
     }
+
+      let totalPrice = cartItems.reduce((total, itemPrice) => total + itemPrice.price, 0);
 
   return (
      <div className='m-2 p-4 flex flex-col gap-4'>
     {cartItems.map(item => (
        
-        <div key={item.id} className='bg-blue-100 w-150 rounded-2xl m-1 p-4 flex gap-10 shadow-sm'>
+        <div key={item.id} className='bg-blue-100 rounded-2xl m-1 p-4 flex gap-10 shadow-sm'>
             <div className='bg-white rounded-2xl shadow-sm'>
                 <img className='h-[150px] rounded-2xl' src={item.imageUrl} alt="" />
             </div>
