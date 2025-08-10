@@ -14,7 +14,7 @@ export const cartData = [
     imageUrl: "https://m.media-amazon.com/images/I/412Wz53vZ9L._UF1000,1000_QL80_.jpg",
     description: "Track your steps, heart rate, and sleep with this lightweight band.",
     price: 1499,
-    quantity: 2,
+    quantity: 1,
   },
   {
     id: 3,
