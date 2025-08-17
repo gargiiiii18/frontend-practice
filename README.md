@@ -1,1 +1,4 @@
-# Practising frontned to create cleaner and seamless ui's
+## Practising frontend to create cleaner, more seamless and responsive ui's.
+
+### Framework: Next.js
+
